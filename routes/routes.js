@@ -5,7 +5,7 @@ const Store = require('../models/store')
 const express = require('express')
 const youtubeparser = require('../utilities/youtubeparser')
 const router = express.Router()
-
+//yes
 router.get('/videos', async (req, res) => {
     try {
         const video = await Video.find().populate('store', 'name')
