@@ -97,17 +97,17 @@ router.post('/products/:id/multiple', (req, res) => {
     let products = req.body.map(item => {
 
         return {
-            videoID:item.videoID,
+            videoID:req.params.id,
             productURL: item.productURL,
             productTitle:item.productTitle,
             productPrice:item.productPrice,
-            timestamp: Date.now()
+            productImageURL:item.productImageURL
         };
     })
-    Video.insertMany(videos)
+    Product.insertMany(products)
         .then(() => {
-            console.log("Videos Added");
-            res.status(200).json("Videos Added");
+            console.log("Products Added");
+            res.status(200).json("Products Added");
         })
         .catch(err => res.status(400).json("Error: " + err));
 });

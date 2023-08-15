@@ -2,8 +2,9 @@ const mongoose = require('mongoose')
 
 const productSchema = new mongoose.Schema({
     videoID:{
-        required: true,
-        type: String
+        required:true,
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"Video"
     },
     productURL:{
         required:true,
@@ -15,7 +16,7 @@ const productSchema = new mongoose.Schema({
     },
     productPrice:{
         required:true,
-        type:String
+        type:Number
     },  
     productImageURL:{
         required:true,

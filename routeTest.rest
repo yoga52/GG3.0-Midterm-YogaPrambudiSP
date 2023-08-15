@@ -88,20 +88,91 @@ Content-Type: application/json
     "store": "64da311baf9ff86e08954c90"
     }
 ]}
+
+###
+POST http://localhost:4000/api/videos/multiple
+Content-Type: application/json
+
+[
+    {
+    "name" :"Earth Machine Top 16 EUWCQ 2023",
+    "videoURL" : "https://www.youtube.com/watch?v=guz65FfByaA",
+    "store": "64da30ddaf9ff86e08954c8f"
+    },
+    {
+    "name" :"Undefeated Vanquish Soul",
+    "videoURL" : "https://www.youtube.com/watch?v=tQabL1Ua9bQ",
+    "store": "64da30ddaf9ff86e08954c8f"
+    },
+    {
+    "name" :"Top 5 Beginner Decks to Try (Yugioh)",
+    "videoURL" : "https://www.youtube.com/watch?v=sTEt0-ER4gA",
+    "store": "64da30ddaf9ff86e08954c8f"
+    },
+    {
+    "name" :"Samsung Z Flip 5",
+    "videoURL" : "https://www.youtube.com/watch?v=WuljKartv2U",
+    "store": "64da311baf9ff86e08954c90"
+    },
+    {
+    "name" :"5 Rekomendasi KURSI GAMING Murah",
+    "videoURL" : "https://www.youtube.com/watch?v=vNgROuLopas",
+    "store": "64da311baf9ff86e08954c90"
+    }
+]
+
 ###
 PATCH  http://localhost:4000/api/videos/view/64da32475236b58d030f982a
 Content-Content-Type: application/json
 
 ###
 
-GET http://localhost:4000/api/comments/1
+GET http://localhost:4000/api/comments/64da64673ad74448964ff3ea
 
 ###
-POST http://localhost:4000/api/comments/1
+POST http://localhost:4000/api/comments/64da64673ad74448964ff3ea
 Content-Type: application/json
 
 {
-    "username" : "banannaman",
-    "videoURL" : "1",
-    "comment": "Pm Gan"
+    "username" : "Saber",
+    "comment": "Mantap, Murah Sekali Barangnya"
 }
+###
+POST http://localhost:4000/api/products/64da64673ad74448964ff3ea/multiple
+Content-Type: application/json
+
+[
+    {
+        "productURL": "https://www.tokopedia.com/yuikaomise/kartu-yugioh-machina-gearframe-common-tcg",
+        "productTitle":"Machina Gearframe",
+        "productPrice":15000,
+        "productImageURL":"https://images.ygoprodeck.com/images/cards/42940404.jpg"
+    },
+    {   
+        "productURL": "https://www.tokopedia.com/pusat-jajanan/promo-terbatas-infinitrack-harvester-ultra-rare-1st-mp20-yugioh",
+        "productTitle":"Infinitrack Harvester",
+        "productPrice":183000,
+        "productImageURL":"https://images.ygoprodeck.com/images/cards/35645105.jpg"
+        
+    },
+    {
+        "productURL": "https://www.tokopedia.com/amazingtc/yugioh-core-deck-infinitrack",
+        "productTitle":"Core Deck Infinitrack",
+        "productPrice":150000,
+        "productImageURL":"https://images.tokopedia.net/img/cache/900/product-1/2020/9/2/3139652/3139652_27d30499-da76-4323-8435-e55232e260d1_1651_1651.jpg"
+    },
+    {
+        "productURL": "https://www.tokopedia.com/cardgamesjaksel/yugioh-blmr-divine-arsenal-aa-zeus-sky-thunder-secret-rare",
+        "productTitle":"Yugioh BLMR Divine Arsenal AA-ZEUS - Sky Thunder secret rare",
+        "productPrice":280000,
+        "productImageURL":"https://images.ygoprodeck.com/images/cards/90448279.jpg"
+    },
+    {   
+        "productURL": "https://www.tokopedia.com/unitycg/yugioh-mged-en066-superdreadnought-rail-cannon-juggernaut-liebe-rare",
+        "productTitle":"Superdreadnought Rail Cannon Juggernaut Liebe",
+        "productPrice":19000,
+        "productImageURL":"https://images.ygoprodeck.com/images/cards/26096328.jpg"
+    }
+]
+###
+GET http://localhost:4000/api/products/64da64673ad74448964ff3ea
