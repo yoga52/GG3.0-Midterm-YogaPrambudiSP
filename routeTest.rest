@@ -97,27 +97,27 @@ Content-Type: application/json
     {
     "name" :"Earth Machine Top 16 EUWCQ 2023",
     "videoURL" : "https://www.youtube.com/watch?v=guz65FfByaA",
-    "store": "64da30ddaf9ff86e08954c8f"
+    "store": "64db01b1af9ff86e08954ca0"
     },
     {
     "name" :"Undefeated Vanquish Soul",
     "videoURL" : "https://www.youtube.com/watch?v=tQabL1Ua9bQ",
-    "store": "64da30ddaf9ff86e08954c8f"
+    "store": "64db01b1af9ff86e08954ca0"
     },
     {
     "name" :"Top 5 Beginner Decks to Try (Yugioh)",
     "videoURL" : "https://www.youtube.com/watch?v=sTEt0-ER4gA",
-    "store": "64da30ddaf9ff86e08954c8f"
+    "store": "64db01b1af9ff86e08954ca0"
     },
     {
     "name" :"Samsung Z Flip 5",
     "videoURL" : "https://www.youtube.com/watch?v=WuljKartv2U",
-    "store": "64da311baf9ff86e08954c90"
+    "store": "64db01f1af9ff86e08954ca1"
     },
     {
     "name" :"5 Rekomendasi KURSI GAMING Murah",
     "videoURL" : "https://www.youtube.com/watch?v=vNgROuLopas",
-    "store": "64da311baf9ff86e08954c90"
+    "store": "64db01f1af9ff86e08954ca1"
     }
 ]
 
@@ -138,7 +138,7 @@ Content-Type: application/json
     "comment": "Mantap, Murah Sekali Barangnya"
 }
 ###
-POST http://localhost:4000/api/products/64da64673ad74448964ff3ea/multiple
+POST http://localhost:4000/api/products/64db024fe0a8861f593ba310/multiple
 Content-Type: application/json
 
 [
