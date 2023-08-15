@@ -190,3 +190,13 @@ Comments Object
   * **Code:** 400  
   **Content:** `{ error : Error Message }`  `
 
+
+
+### Deployment
+
+You can visit this App right here
+https://gg-3-0-midterm-yoga-prambudi-sp.vercel.app/
+
+## Hit Example
+Get All Movies
+https://gg-3-0-midterm-yoga-prambudi-sp.vercel.app/api/videos
